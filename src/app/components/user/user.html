@@ -1,0 +1,16 @@
+<div class="card">
+    <h2>User Details</h2>
+
+    <p><strong>Name: </strong> {{ name() }}</p>
+    <p><strong>Age: </strong> {{ age() }}</p>
+
+    <p class="status"><strong>Status:</strong>
+        <span [class.adult]="status() === 'Adult'"
+              [class.minor]="status() === 'Minor'"> {{ status() }}</span>
+    </p>
+
+    <div class="ageUpdate">
+        <button (click)="increaseAge()">+</button>
+        <button (click)="decreaseAge()">-</button>
+    </div>
+</div>
