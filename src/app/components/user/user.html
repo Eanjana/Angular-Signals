@@ -10,7 +10,7 @@
     </p>
 
     <div class="ageUpdate">
-        <button (click)="increaseAge()">+</button>
-        <button (click)="decreaseAge()">-</button>
+        <lib-ui-button (clicked)="increaseAge()">+</lib-ui-button>
+        <lib-ui-button (clicked)="decreaseAge()" [disabled]="age() === 0">-</lib-ui-button>
     </div>
 </div>

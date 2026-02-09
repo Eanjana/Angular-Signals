@@ -36,26 +36,28 @@ h2{
   gap: 1rem;
 }
 
-button{
-    width: 60px;
-    height: 40px;
-    border-radius:20%;
-    cursor: pointer;
-    background-color: rgb(4, 4, 107);
-    color: white;
-    border: 4px outset rgb(2, 2, 57);
-    font-size: 1rem;
-    font-weight: 600;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+//used libraries for buttons
 
-    &:hover{
-        background-color: rgb(6, 6, 147);
-    }
+// button{
+//     width: 60px;
+//     height: 40px;
+//     border-radius:20%;
+//     cursor: pointer;
+//     background-color: rgb(4, 4, 107);
+//     color: white;
+//     border: 4px outset rgb(2, 2, 57);
+//     font-size: 1rem;
+//     font-weight: 600;
+//     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+//     transition: transform 0.15s ease, box-shadow 0.15s ease;
 
-    /* Shrink effect when clicked */
-    &:active {
-    transform: scale(0.9);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-  }
-}
+//     &:hover{
+//         background-color: rgb(6, 6, 147);
+//     }
+
+//     /* Shrink effect when clicked */
+//     &:active {
+//     transform: scale(0.9);
+//     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+//   }
+// }

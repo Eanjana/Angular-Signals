@@ -1,8 +1,9 @@
 import { Component, signal ,computed, effect} from '@angular/core';
+import { UiButton } from 'ui-button';
 
 @Component({
   selector: 'app-user',
-  imports: [],
+  imports: [UiButton],
   templateUrl: './user.html',
   styleUrl: './user.scss',
 })

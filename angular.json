@@ -93,6 +93,36 @@
           }
         }
       }
+    },
+    "ui-button": {
+      "projectType": "library",
+      "root": "projects/ui-button",
+      "sourceRoot": "projects/ui-button/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-button/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ui-button/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/ui-button/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
